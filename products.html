@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Syed's Stationery Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <form action="/action_page.php">
+                <input type="text" placeholder="search">
+                <button type="submit">search</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Price(RM)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/notebook.jpg" alt="Notebook"></td>
+                        <td>Notebook</td>
+                        <td>3.00</td>
+                        <td><button onclick="addToCart('Notebook', 'images/notebook.jpg')">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/pen.jpg" alt="Pen"></td>
+                        <td>Pen</td>
+                        <td>2.00</td>
+                        <td><button onclick="addToCart('Pen', 'images/pen.jpg')">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/calculator.jpg" alt="calculator"></td>
+                        <td>Calculator</td>
+                        <td>87.90</td>
+                        <td><button onclick="addToCart('Calculator', 'images/calculator.jpg')">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/novel1.jpg" alt="Pen"></td>
+                        <td>The Cruel Prince by Holly Black</td>
+                        <td>39.00</td>
+                        <td><button onclick="addToCart('The Cruel Prince', 'images/novel1.jpg')">Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p><b>&copy; Syed's Stationery Shop</b></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
